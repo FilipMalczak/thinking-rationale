@@ -167,12 +167,13 @@ Before commiting you do a full suite with `python -m test.run_all`.
 ## Family of `thinking` projects
 
  - [![thinking-modules](https://badgen.net/static/thinking/modules/lightgray?icon=github)](https://github.com/FilipMalczak/thinking-modules)
+   - [![PyPI version](https://badge.fury.io/py/thinking-modules.svg)](https://badge.fury.io/py/thinking-modules)
+   - [![codecov](https://codecov.io/github/FilipMalczak/thinking-modules/graph/badge.svg?token=KFQ1DJQMWF)](https://codecov.io/github/FilipMalczak/thinking-modules)
    - at the bottom of the stack lies the library that models module names and modules themselves, allowing for a scan
      of the codebase, figuring out parent packages of modules and packages, placement in the filesystem, recognizing
      the root directory of the project, etc
-   - #TODO PyPI
-   - #TODO coverage
  - [![thinking-runtime](https://badgen.net/static/thinking/runtime/lightgray?icon=github)](https://github.com/FilipMalczak/thinking-runtime)
+   - [![PyPI version](https://badge.fury.io/py/thinking-runtime.svg)](https://badge.fury.io/py/thinking-runtime)
    - this library provides generic framework for configuring runtime-wide parts of code
    - examples that are provided out-of-the-box are
      - logging configuration
@@ -180,8 +181,8 @@ Before commiting you do a full suite with `python -m test.run_all`.
    - this is the part that processes `__logging__`, `__dbs__`, etc files
    - it allows for installing your own bootstrap actions
    - basically, if you want to have stuff happen before everything else, this is the tool for you
-   - #TODO pypi
  - [![thinking-tests](https://badgen.net/static/thinking/tests/lightgray?icon=github)](https://github.com/FilipMalczak/thinking-tests)
+   - [![PyPI version](https://badge.fury.io/py/thinking-tests.svg)](https://badge.fury.io/py/thinking-tests)
    - not a testing framework per se, more like a handy frontend for one
    - uses existing frameworks as the backend (`unittest` out of the box, but allows for developers to integrate others)
    - provides decorator-based API to declare tests, as well as test aspect (interceptor) framework, with defaults
@@ -192,8 +193,9 @@ Before commiting you do a full suite with `python -m test.run_all`.
    - this is the part that handles `run_all.py` files
    - ideally, a one-stop shop for common testing practices without the "wrap the test case in a class" or "install this 
      specific set of libraries to have XML reports" ceremony
-   - #TODO pypi
  - [![thinking-injection](https://badgen.net/static/thinking/injection/lightgray?icon=github)](https://github.com/FilipMalczak/thinking-injection)
+   - [![PyPI version](https://badge.fury.io/py/thinking-injection.svg)](https://badge.fury.io/py/thinking-injection)
+   - [![codecov](https://codecov.io/github/FilipMalczak/thinking-injection/graph/badge.svg?token=X5HGHMQXAP)](https://codecov.io/github/FilipMalczak/thinking-injection)
    - simply a DI framework
    - as opposed to [other python DI frameworks](https://stackoverflow.com/questions/156230/python-dependency-injection-framework)
      relies on code scanning, typing annotations and auto-recognition of injectable stuff instead of decorators and config
@@ -205,8 +207,6 @@ Before commiting you do a full suite with `python -m test.run_all`.
      is taken care of
    - is foundational for the future utilities
    - will usually be crucial to your entrypoints like `app.py`
-   - #TODO pypi
-   - #TODO coverage
  
 ### Future projects
 
