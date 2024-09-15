@@ -131,7 +131,6 @@ Your repo would look like this:
  - `__test__.py`
  - `calculator`
    - `__init__.py`
-   - `__main__.py`
    - `cli`
      - `__init__.py`
      - `parser.py`
@@ -155,7 +154,7 @@ Your repo would look like this:
    - `test_cli_parser.py`
    - `run_all.py`
 
-You run the app as `python -m calculator`.
+You run the app either as `python -m calculator.cli.start 2 + 3 - 4` or `python -m calculator.interactive.start`.
 
 When you're working on expressions evaluator, you probably cycle over `python -m test.expression.test_evaluator`.
 Once you're done, but you wanna do some regression, to see if the changes you made didn't break other expression-related
